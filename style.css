@@ -1,0 +1,66 @@
+/* ----- da eliminare ------ */
+html, body
+  overflow: visible
+
+@import url('https://www.power.flexyscore.net/dirette/temp/css/schema.css')
+
+/* ----- classi comuni ------ */
+*
+  -webkit-backface-visibility: hidden
+  overflow: hidden
+  margin: -1px
+
+.container
+  display: grid
+  color: white
+
+.box, .space
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 0 0.5em
+  -webkit-transform: skew(15deg, 0)
+  transform: skew(15deg, 0)
+  font-style: italic
+
+.space
+  padding: 0 0.08em
+
+.boxteams, .boxhometeam, .boxawayteam
+  background: #FF0000
+
+.boxpoints, .space
+  background: #A52A2A
+
+.boxhomepoints
+  padding-right: 0.8vw
+  border-left: solid 0.1em rgba(2, 5, 5, 0)
+  justify-content: flex-end
+
+.boxawaypoints
+  padding-left: 0.8vw
+  border-right: solid 0.1em rgba(2, 5, 5, 0)
+  justify-content: flex-start
+
+.boxawayteam
+  border-right: solid 0.1em rgba(2, 5, 5, 0)
+
+.boxsets
+  background: #FF0000
+  color: #FF0000
+
+.sgrlogo
+  background-size: auto 80% !important
+
+.sgrlogo:before
+  display: none
+
+/* ----- GENERIC -------- */
+.containergeneric
+  grid-template: auto / 8vw auto minmax(7.5vw, auto) auto minmax(7.5vw, auto) auto
+  float: left
+  width: auto
+  font-size: 3.1vw
+
+.containergeneric .boxawayteam
+  margin-right: 1.5em
